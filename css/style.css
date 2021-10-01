@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Poppins:wght@300;400&family=Squada+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Ignotum';
+    src: url('./fonts/Ignotum.ttf');
+}
+
+body {
+    font-family: Ignotum;
+}
+
+.container-padding {
+    padding-top: 2vh 5vw 0vh 5vw;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 8fr;
+
+    position: fixed;
+}
+
+.sidebar {
+    min-width: 50px;
+    border-right: 1px solid #ccc;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navigation {
+    min-width: 30vw;
+    height: 100vh;
+    border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.navigation,
+.content,
+.sidebar {
+    opacity: 0.0;
+    transition-duration: 0.5s;
+    transform: translateY(30px);
+    transform: skew(0deg, 2deg);
+
+}
+
+.navigation, .content, .sidebar {
+    opacity: 1.0;
+    transform: translateY(-30px);
+
+}
+
+.navigation a {
+    padding: 0.5vh 5vw;
+    text-decoration: none;
+}
+
+.navigation h1 {
+    font-family: 'Fira Mono', sans-serif;
+    text-decoration: none;
+    color: #adadad;
+    font-weight: 400;
+    font-size: 50px;
+    transition: ease-in-out 0.2s;
+}
+
+.navigation a:hover h1 {
+    color: black;
+    transform: scale(1.01);
+    padding-left: 0.5vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.content {
+    padding: 5vh 5vw 0vh 5vw;
+    height: 100vh;
+    overflow: scroll;
+    margin-bottom: 100vh;
+}
+
+
+/* Components */
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Fira Mono', sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+hr {
+    margin-bottom: 10px;
+    margin-top: 2px;
+    border: unset;
+    border: 1px solid #ccc;
+}

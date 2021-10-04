@@ -36,13 +36,27 @@ function fadeOut() {
 function toggleNav() {
 	var navbar = document.querySelector("#navbar");
 	var menu = document.querySelector("#menu");
-
+	
 	menu.classList.toggle("change");
 	navbar.classList.toggle("hide");
 }
 
-window.onresize = function () {
-	if (window.innerWidth <= 1000) {
-		toggleNav();
+function toggleBackground() {
+	var background = document.querySelector("#background");
+	var toggle = document.querySelector("#bg-toggle");
+	background.classList.toggle("hide");
+
+	// background.innerHTML = "cbt";
+
+	if (toggle.textContent == "Disable Background") {
+		toggle.textContent = "Enable Background";
+	} else {
+		toggle.textContent = "Disable Background";
 	}
+
 }
+// window.onresize = function () {
+// 	if (window.innerWidth <= 1000) {
+// 		toggleNav();
+// 	}
+// }

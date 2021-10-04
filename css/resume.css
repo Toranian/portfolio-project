@@ -21,7 +21,7 @@
     min-width: 20%;
     margin-right: 2vw;
     height: 30px;
-    transition: linear 0.2s;
+    transition: linear 0.1s;
 }
 
 #resume h2:hover {
@@ -64,6 +64,10 @@
 	.resume-container {
 		width: 100%;
 	}
+
+    .resume-details {
+        width: 100%;
+    }
 }
 
 #resume p {
@@ -85,7 +89,19 @@ summary {
 
 #resume a {
     text-decoration: none;
-	/* color:rgb(44, 176, 238); */
     font-weight: bold;
 	color: black;
+}
+
+.resume-details h3 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#resume .resume-details p {
+    line-height: 1.5em;
+}
+
+#resume .resume-details ul {
+    margin-left: 1vw;
 }

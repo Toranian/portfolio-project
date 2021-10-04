@@ -1,10 +1,17 @@
 window.onload = function () {
 	var elements = document.getElementsByClassName("animate");
 
+	// var navbar = document.querySelector("#navbar");
+
+
 	for (var i = 0; i < elements.length; i++) {
 		element = elements[i];
 		element.classList.remove("fade");
 		element.classList.add("show");
+
+		if (window.innerWidth <= 1000) {
+			toggleNav();
+		}
 	}
 }
 
@@ -55,8 +62,11 @@ function toggleBackground() {
 	}
 
 }
-// window.onresize = function () {
-// 	if (window.innerWidth <= 1000) {
-// 		toggleNav();
-// 	}
-// }
+window.onresize = function () {
+	var background = document.querySelector("#navbar");
+	if (window.innerWidth <= 1000 || !background.classList.contains("hide")) {
+		toggleNav();
+		// background.classList.add("hide");
+
+	}
+}

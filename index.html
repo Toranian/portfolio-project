@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/resume.css" />
+    <title>Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/cbb5573920.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/resume.css">
-  <title>Portfolio</title>
-  <script src="https://kit.fontawesome.com/cbb5573920.js"
-    crossorigin="anonymous"></script>
+  <body>
+    <iframe
+      src="https://preview.p5js.org/Toranian20/embed/i3ggrb9Kt"
+      height="100%"
+      width="100%"
+    ></iframe>
 
-</head>
-
-<body>
-
-  <iframe src="https://preview.p5js.org/Toranian20/embed/i3ggrb9Kt"
-    height="100%" width="100%"></iframe>
-
-  <div class="container">
+   <div class="container">
 
     <div class="sidebar fade animate">
 
-      <div id="menu" onclick="toggleNav()">
+      <div id="menu" class="change" onclick="toggleNav()">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
@@ -32,16 +34,21 @@
       <div class="socials">
 
         <a href="https://www.twitter.com/" target="_blank">
-          <i class="fab fa-3x fa-twitter-square"></i>
+          <i class="fab fa-2x fa-twitter-square"></i>
 
         </a>
         <a href="https://www.twitter.com/" target="_blank">
-          <i class="fab fa-3x fa-linkedin"></i>
+          <i class="fab fa-2x fa-linkedin"></i>
         </a>
 
         <a href="https://www.github.com/Toranian/" target="_blank">
-          <i class="fab fa-3x fa-github-square"></i>
+          <i class="fab fa-2x fa-github-square"></i>
         </a>
+
+        <a href="https://www.facebook.com/universityofvictoria/">
+          <i class="fab fa-facebook-square fa-2x"></i>
+        </a>
+
       </div>
 
     </div>
@@ -52,202 +59,81 @@
         <div id="profile-img"></div>
 
         <div>
-          <a href="./index.html" onclick="fadeOut()">
+          <a href="./index.html" onclick="fadeOut(); toggleNav();">
             <i class="fab fa-3x fa-chevron-right"></i>
             <h1>Home</h1>
           </a>
-          <a href="./hobbies.html" onclick="fadeOut()">
+          <a href="./hobbies.html" onclick="fadeOut(); toggleNav();">
             <h1>Hobbies</h1>
           </a>
-          <a href="./resume.html" onclick="fadeOut()">
+          <a href="./plants.html" onclick="fadeOut(); toggleNav();">
+            <h1>Plants</h1>
+          </a>
+          <a href="./index.html" onclick="fadeOut(); toggleNav();">
             <h1>Resume</h1>
           </a>
+
+          <h3 onclick="toggleBackground()" id="bg-toggle" style="cursor: pointer;">Disable Background</h3>
 
         </div>
 
       </div>
     </div>
 
-    <div class="content fade animate" id="content">
-      <section id="resume">
-        <div class="resume-container" id="resume-title">
-          <h2 class="resume-header">Isaac Morrow</h2>
-          <div id="resume-details">
-            <h3>
-              Full-Stack Website Developer
-            </h3>
-            <i class="fab fa-lg fa-github-square"></i>
+      <div class="content fade animate" id="content">
+        <section id="resume" class="landing-page">
+          <!-- <div class="resume-container" id="resume-title">
+            <h2 class="resume-header">Isaac Morrow</h2>
+            <div id="resume-details">
+              <h3>Full-Stack Website Developer | UVic</h3>
+              <i class="fab fa-lg fa-github-square"></i>
+              <a href="https://github.com/Toranian/">GitHub</a>
+            </div>
+          </div> -->
 
+          <!-- <div class="divider"></div> -->
 
-            <a href="https://github.com/Toranian/">GitHub</a>
+          <div id="landing">
+            <div class="title">
+              <div id="wave">👋</div>
+              <h1>Well hello there</h1>
+              <h3>I didn't see you come in</h3>
+            </div>
           </div>
 
-        </div>
+          <div class="divider"></div>
 
-        <div class="divider"></div>
-        <br><br>
+          <h3 class="bolded">Alright, so who are you?</h3>
+          <p>
+            Thanks for asking! I'm a 19 year old full-stack website developer
+            currently pursuing a degree in computer science at the University of
+            Victoria.
+          </p>
+          <br />
+          <p>
+            I'm a primarily self-taught programmer, having spent countless hours
+            learning programming technologies that intrest me. From mobile apps
+            to websites, I've tried it. I also have a substantial amount of
+            interest in the crypto-currency space, as I have spent 4 months
+            working for a cyptocompany during the 2021 summer term.
+          </p>
+          <br />
+          <p>
+            I'm not looking for any particular job right now, but I'm open to
+            any inquiries for when I am available. Enjoy exploring my portfolio website!
+          </p>
 
-        <div class="resume-container">
-
-          <h2 class="resume-header" id="education">
-            Education
-          </h2>
-          <div class="resume-details">
-            <p>
-              University of Victoria, Victoria, BC (BSc
-              Computer Science, second year) <strong>Sept 2020
-                -
-                Present</strong>
-
-            </p>
-            <br>
-            <p>
-              Timberline Secondary School, Campbell River,
-              British Columbia <strong>Sept 2016 - June
-                2020</strong>
-
-            </p>
-          </div>
-        </div>
-
-
-        <div class="resume-container">
-          <h2 class="resume-header">
-            Skills
-          </h2>
-          <div class="resume-details">
-            <p>
-              <strong>Programming:</strong>
-              Python, JavaScript, Dart/Flutter, Java,
-              PHP
-            </p>
-            <br>
-            <p>
-              <strong>Web development:</strong> HTML, CSS, React,
-              JavaScript,
-              WordPress
-            </p>
-            <br>
-            <p>
-              <strong>Tools:</strong> VSCode, Linux, Git, Figma,
-              command
-              line/terminal
-            </p>
-          </div>
-        </div>
-
-
-        <div class="resume-container">
-          <h2 class="resume-header">
-            Projects
-          </h2>
-
-          <div class="resume-details">
-            <details>
-              <summary>
-                <strong>Prografit </strong>- A health application for
-                programmers.
-              </summary>
-              <div class="divider"></div>
-              <p>
-                <img src="./img/prografit_home.png" alt="">
-                I worked on a team with 3 other computer scientist students to
-                compete in the Hack the North hackathon. Together, we created an
-                app to help programmers stay healthy during long programming
-                sessions.
-                <br><br>
-                <img src="./img/prografit_dash.png" alt="">
-                This project uses the Python programming alongside the web
-                framework, Django. Django allowed us to quickly implement a
-                database complete with user models. Django also allowed us to
-                create a powerful user authentication system and user profiles.
-                <br><br>
-                The frontend for the website was built with the Django
-                templating language to help save time during the hackathon.
-              </p>
-            </details>
-            <br>
-            <details>
-              <summary>
-                <strong>Humanager</strong> - A tool to help automate your love
-                and social life.
-              </summary>
-            </details>
-            <br>
-            <details>
-              <summary>
-                <strong>Blockchain Tool</strong> - A utility to help explore the
-                Bitcoin
-                blockchain.
-              </summary>
-            </details>
-
-          </div>
-        </div>
-
-        <div class="resume-container">
-          <h2 class="resume-header">
-            Work
-          </h2>
-          <div class="resume-details">
-            <details>
-              <summary>
-                <!-- <div class="work-card"> -->
-
-                <strong>Campbell River District and Chamber of
-                  Commerce</strong>
-                - A WordPress website for the CRDCC complete with payment
-                integration.
-
-
-                <!-- </div> -->
-              </summary>
-              <div class="divider"></div>
-              <img src="./img/chamber.png" alt="">
-              <p>
-                During my grade 12 year in highschool, I spent a lot of
-                time
-                working on the website for the Chamber of Commerce. It
-                was
-                my
-                first time working with a client and learned a lot!
-
-              </p>
-            </details>
-            <br>
-            <details>
-              <summary>
-                <!-- <div class="work-card"> -->
-                <strong>
-                  River City Future Technologies Ltd.
-                </strong>
-
-                - A Campbell River based company that specializes in blockchain
-                technology.
-                <!-- </div> -->
-              </summary>
-              <div class="divider"></div>
-              <img src="" alt="">
-            </details>
-          </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-      </section>
-
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </section>
+      </div>
     </div>
-  </div>
 
-
-  <script src="js/main.js"></script>
-
-
-</body>
-
+    <script src="js/main.js"></script>
+  </body>
 </html>

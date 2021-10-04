@@ -8,30 +8,45 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/resume.css">
   <title>Portfolio</title>
+  <script src="https://kit.fontawesome.com/cbb5573920.js"
+    crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-  <!-- <div id="funk">
 
+  <!-- <iframe src="https://preview.p5js.org/Toranian20/embed/i3ggrb9Kt"
+    height="100%" width="100%"></iframe> -->
 
-	</div> -->
   <div class="container">
 
     <div class="sidebar fade animate">
 
-      <h3>IM</h3>
+      <div id="menu" onclick="toggleNav()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
 
 
       <div class="socials">
 
-        <a href="https://www.twitter.com/" target="_blank">TW</a>
-        <a href="https://www.twitter.com/" target="_blank">LI</a>
+        <a href="https://www.twitter.com/" target="_blank">
+          <i class="fab fa-2x fa-twitter-square"></i>
+
+        </a>
+        <a href="https://www.twitter.com/" target="_blank">
+          <i class="fab fa-2x fa-linkedin"></i>
+        </a>
+
+        <a href="https://www.github.com/Toranian/" target="_blank">
+          <i class="fab fa-2x fa-github-square"></i>
+        </a>
       </div>
 
     </div>
 
-    <div class="navigation fade animate">
-      <!-- <iframe src="https://preview.p5js.org/Toranian20/embed/i3ggrb9Kt" height="100%" style="position: relative; width: 100%;"></iframe> -->
+    <div class="navigation fade animate" id="navbar">
 
       <div id="profile-img"></div>
 
@@ -40,7 +55,7 @@
         <a href="./index.html" onclick="fadeOut()">
           <h1>Home</h1>
         </a>
-        <a href="./work.html" onclick="fadeOut()">
+        <!-- <a href="./work.html" onclick="fadeOut()">
           <h1>My Work</h1>
         </a>
         <a href="index.html">
@@ -48,8 +63,8 @@
         </a>
         <a href="index.html">
           <h1>My Skills</h1>
-        </a>
-        <a href="index.html">
+        </a> -->
+        <a href="index.html" onclick="fadeOut()">
           <h1>Resume</h1>
         </a>
 
@@ -64,6 +79,9 @@
             <h3>
               Full-Stack Website Developer
             </h3>
+            <i class="fab fa-lg fa-github-square"></i>
+
+
             <a href="https://github.com/Toranian/">GitHub</a>
           </div>
 
@@ -216,7 +234,13 @@
             </details>
           </div>
         </div>
-
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
       </section>
 
@@ -225,6 +249,7 @@
 
 
   <script src="js/main.js"></script>
+
 
 </body>
 

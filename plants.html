@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/resume.css" />
+    <title>Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/cbb5573920.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <iframe
+      src="https://preview.p5js.org/Toranian20/embed/i3ggrb9Kt"
+      height="100%"
+      width="100%"
+      id="background"
+    ></iframe>
+
+    <div class="container">
+      <div class="sidebar fade animate">
+        <div id="menu" class="change" onclick="toggleNav()">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+
+        <div class="socials">
+          <a href="https://www.twitter.com/" target="_blank">
+            <i class="fab fa-2x fa-twitter-square"></i>
+          </a>
+          <a href="https://www.twitter.com/" target="_blank">
+            <i class="fab fa-2x fa-linkedin"></i>
+          </a>
+
+          <a href="https://www.github.com/Toranian/" target="_blank">
+            <i class="fab fa-2x fa-github-square"></i>
+          </a>
+
+          <a href="https://www.facebook.com/universityofvictoria/">
+            <i class="fab fa-facebook-square fa-2x"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="navigation fade animate" id="navbar">
+        <div>
+          <div id="profile-img"></div>
+
+          <div>
+            <a href="./index.html" onclick="fadeOut(); toggleNav();">
+              <i class="fab fa-3x fa-chevron-right"></i>
+              <h1>Home</h1>
+            </a>
+            <a href="./plants.html" onclick="fadeOut(); toggleNav();">
+            <h1>Plants</h1>
+          </a>
+            <a href="./hobbies.html" onclick="fadeOut(); toggleNav();">
+              <h1>Hobbies</h1>
+            </a>
+            <a href="./index.html" onclick="fadeOut(); toggleNav();">
+              <h1>Resume</h1>
+            </a>
+
+            <h3
+              onclick="toggleBackground()"
+              id="bg-toggle"
+              style="cursor: pointer"
+            >
+              Disable Background
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="content fade animate" id="content">
+        <section id="resume" class="plant">
+          <div class="resume-container" id="resume-title">
+            <h2 class="resume-header">🌳 My Plants</h2>
+            <div id="resume-details">
+              <h3>Part-time plant daddy</h3>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+          <br /><br />
+          <h2>What makes my plants special?</h2>
+          <br>
+          <p>
+            Well, to be frank, I can't believe you would ask such a question.
+            When I'm not studying or programming, I'm a full time plant Dad. My
+            plants are responsible for good programming and solid studying
+            sessions, without these little guys, I wouldn't be where I am today.
+            My plants are so important that I decided to give them an entire
+            page.
+          </p>
+          <div class="buffer"></div>
+          <h2>Mother of all Spider Plants</h2>
+          <br>
+          <p>
+            This is my mother spider plant. It's a plant that I got as an itty
+            bitty seedling from a friend when I was in the 11th grade. Since
+            then, she has given birth to about 30 smaller baby plants. As her
+            name implies, she is the mother of all my other spider plants. I'm
+            very proud of her!
+          </p>
+          <div class="img-container">
+            <img
+              src="./img/mother_spider.jpg"
+              alt="My mother spider plant!"
+              class="hobby-img"
+            />
+          </div>
+
+          <div class="buffer"></div>
+          <h2>Baby Spider Plant</h2>
+          <br>
+          <p>
+            This spider plant is a baby of the mother spider plant shown above.
+            It's grown really nicely and has two babies of it's own on the way!
+          </p>
+          <div class="img-container">
+            <img
+              src="./img/spider_baby.jpg"
+              alt="My baby spider plant!"
+              class="hobby-img"
+            />
+          </div>
+          <div class="buffer"></div>
+          <h2>Pothos</h2>
+          <br>
+          <p>
+            Don't tell the other plants, but this pothos is secretly my
+            favourite. THe colours are fantastic, both white and green on the
+            leaves. It looks as if marble decided to be a plant instead of a
+            rock.
+          </p>
+          <div class="img-container">
+            <img
+              src="./img/pothos.jpg"
+              alt="My beautiful pothos"
+              class="hobby-img"
+            />
+          </div>
+          <div class="buffer"></div>
+          <h2>Surely you have more?</h2>
+          <br>
+          <p>
+            I do, actually! However, the rest value their privacy, so I decided not to post them online.
+          </p>
+          <div class="buffer"></div>
+          <div class="buffer"></div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

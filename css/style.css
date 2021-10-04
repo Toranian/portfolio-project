@@ -94,10 +94,10 @@ html {
     padding: 5vh 5vw 0vh 5vw;
     height: 100vh;
     overflow: scroll;
-    margin-bottom: 100vh;
     scroll-behavior: smooth;
     position: relative;
     width: 100%;
+    box-sizing: border-box;
 }
 
 
@@ -360,4 +360,71 @@ summary::marker {
 
 #bg-toggle:hover {
     font-weight: bold;
+}
+
+#wave {
+    width: 15px;
+    font-size: 35px;
+    animation: wave 1.5s infinite ease-in-out;
+    transform: translateX(10px);
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+    
+}
+
+#landing {
+    position: relative;
+    padding-bottom: 10vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10vh;
+}
+
+#landing h1 {
+    font-size: calc(22px + 1.0vw);
+    font-weight: bold;
+}
+
+.bolded {
+    font-weight: bold;
+}
+
+.landing-page p {
+    line-height: 1.5em !important;
+}
+
+
+.buffer {
+    height: 10vh;
+}
+
+.plant-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.plant-container p {
+
+    overflow-wrap: break-word;
+}
+
+.plant p {
+    line-height: 1.5em !important;
+}
+
+.plant h2 {
+    height: auto !important;
 }

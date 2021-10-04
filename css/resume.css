@@ -1,5 +1,6 @@
 #resume {
     padding: 3.5vh 0;
+    margin-bottom: 20vh;
 }
 
 
@@ -68,10 +69,16 @@
     .resume-details {
         width: 100%;
     }
+
+    .hobby-img {
+        width: 100% !important;
+        height: auto !important;
+
+    }
 }
 
 #resume p {
-    line-height: 1.1em;
+    line-height: 1.2em;
 }
 
 #resume details {
@@ -104,4 +111,18 @@ summary {
 
 #resume .resume-details ul {
     margin-left: 1vw;
+}
+
+.img-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.hobby-img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
 }

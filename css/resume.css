@@ -1,0 +1,61 @@
+#resume {
+    padding: 3.5vh 0;
+}
+
+
+.resume-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: right;
+	width: 70%;
+	position: relative;
+	text-align: left;
+	flex-wrap: wrap;
+	line-height: 1.0;
+}
+
+#resume h2 {
+	padding: 10px;
+	border: 2px solid black;
+	position: relative;
+	min-width: 20%;
+	margin-right: 2vw;
+	height: 30px;
+	transition: linear 0.2s;
+}
+
+#resume h2:hover {
+	/* border: 3px solid white; */
+	background-color: black;
+	color: white;
+	/* transform: scale(1.05) */
+}
+
+.resume-container {
+	display: flex;
+	flex: 1 5;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	text-align: left;
+	margin-bottom: 5vh;
+	position: relative;
+}
+
+#resume p {
+	line-height: 1.1em;
+}
+
+#resume details {
+	font-size: 20px;
+	font-family: "Open Sans", sans-serif
+}
+
+summary {
+	line-height: 1.2em;
+}
+
+#resume .divider {
+	background-color: black;
+}

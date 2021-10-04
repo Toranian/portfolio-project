@@ -2,111 +2,229 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
-	<title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/resume.css">
+  <title>Portfolio</title>
 </head>
 
 <body>
-	<!-- <div id="funk">
+  <!-- <div id="funk">
 
 
 	</div> -->
-	<iframe src="https://preview.p5js.org/Toranian20/embed/i3ggrb9Kt"
-		width="100%" height="100%"></iframe>
-	<div class="container">
+  <div class="container">
 
-		<div class="sidebar fade animate">
+    <div class="sidebar fade animate">
 
-			<h3>IM</h3>
+      <h3>IM</h3>
 
 
-			<div class="socials">
-				<a href="https://www.twitter.com/" target="_blank">TW</a>
-				<a href="https://www.twitter.com/" target="_blank">LI</a>
-			</div>
+      <div class="socials">
 
-		</div>
+        <a href="https://www.twitter.com/" target="_blank">TW</a>
+        <a href="https://www.twitter.com/" target="_blank">LI</a>
+      </div>
 
-		<div class="navigation fade animate">
+    </div>
 
-			<div id="profile-img"></div>
+    <div class="navigation fade animate">
+      <!-- <iframe src="https://preview.p5js.org/Toranian20/embed/i3ggrb9Kt" height="100%" style="position: relative; width: 100%;"></iframe> -->
 
-			<div>
+      <div id="profile-img"></div>
 
-				<a href="./index.html" onclick="fadeOut()">
-					<h1>Home</h1>
-				</a>
-				<a href="./work.html" onclick="fadeOut()">
-					<h1>My Work</h1>
-				</a>
-				<a href="index.html">
-					<h1>Projects</h1>
-				</a>
-				<a href="index.html">
-					<h1>My Skills</h1>
-				</a>
-				<a href="index.html">
-					<h1>Resume</h1>
-				</a>
-				<div id="scrollbar">
+      <div>
 
-				</div>
+        <a href="./index.html" onclick="fadeOut()">
+          <h1>Home</h1>
+        </a>
+        <a href="./work.html" onclick="fadeOut()">
+          <h1>My Work</h1>
+        </a>
+        <a href="index.html">
+          <h1>Projects</h1>
+        </a>
+        <a href="index.html">
+          <h1>My Skills</h1>
+        </a>
+        <a href="index.html">
+          <h1>Resume</h1>
+        </a>
 
-			</div>
-		</div>
+      </div>
+    </div>
 
-		<div class="content fade animate" id="content">
+    <div class="content fade animate" id="content">
+      <section id="resume">
+        <div class="resume-container" id="resume-title">
+          <h2 class="resume-header">Isaac Morrow</h2>
+          <div id="resume-details">
+            <h3>
+              Full-Stack Website Developer
+            </h3>
+            <a href="https://github.com/Toranian/">GitHub</a>
+          </div>
 
-			<section>
-				<h1>Isaac Morrow</h1>
-				<h4>Full-stack web developer</h4>
-				<div class="divider"></div>
-				<details>
-					<summary>
-						<!-- <div class="work-card"> -->
-							<h2>
-								Campbell River District and Chamber of Commerce
-							</h2>
-							<h3>
-								A WordPress website for the CRDCC complete with payment integration.
-							</h3>
-						<!-- </div> -->
-					</summary>
-					<img src="./img/chamber.png" alt="">
-					<p>
-						During my grade 12 year in highschool, I spent a lot of
-						time
-						working on the website for the Chamber of Commerce. It
-						was
-						my
-						first time working with a client and learned a lot!
+        </div>
 
-					</p>
-				</details>
-				<div class="divider"></div>
-				<details>
-					<summary>
-						<!-- <div class="work-card"> -->
-							<h1>
-								River City Future Technologies Ltd.
-							</h1>
-							<h3>
-								A Campbell River based company that specializes in blockchain technology.
-							</h3>
-						<!-- </div> -->
-						<div class="divider"></div>
-					</summary>
-					<img src="" alt="">
-				</details>
-			</section>
-		</div>
-	</div>
+        <div class="divider"></div>
+        <br><br>
+
+        <div class="resume-container">
+
+          <h2 class="resume-header" id="education">
+            Education
+          </h2>
+          <div class="resume-details">
+            <p>
+              University of Victoria, Victoria, BC (BSc
+              Computer Science, second year) <strong>Sept 2020
+                -
+                Present</strong>
+
+            </p>
+            <br>
+            <p>
+              Timberline Secondary School, Campbell River,
+              British Columbia <strong>Sept 2016 - June
+                2020</strong>
+
+            </p>
+          </div>
+        </div>
 
 
-	<script src="js/main.js"></script>
+        <div class="resume-container">
+          <h2 class="resume-header">
+            Skills
+          </h2>
+          <div class="resume-details">
+            <p>
+              <strong>Programming:</strong>
+              Python, JavaScript, Dart/Flutter, Java,
+              PHP
+            </p>
+            <br>
+            <p>
+              <strong>Web development:</strong> HTML, CSS, React,
+              JavaScript,
+              WordPress
+            </p>
+            <br>
+            <p>
+              <strong>Tools:</strong> VSCode, Linux, Git, Figma,
+              command
+              line/terminal
+            </p>
+          </div>
+        </div>
+
+
+        <div class="resume-container">
+          <h2 class="resume-header">
+            Projects
+          </h2>
+
+          <div class="resume-details">
+            <details>
+              <summary>
+                <strong>Prografit </strong>- A health application for
+                programmers.
+              </summary>
+              <div class="divider"></div>
+              <p>
+                <img src="./img/prografit_home.png" alt="">
+                I worked on a team with 3 other computer scientist students to
+                compete in the Hack the North hackathon. Together, we created an
+                app to help programmers stay healthy during long programming
+                sessions.
+                <br><br>
+                <img src="./img/prografit_dash.png" alt="">
+                This project uses the Python programming alongside the web
+                framework, Django. Django allowed us to quickly implement a
+                database complete with user models. Django also allowed us to
+                create a powerful user authentication system and user profiles.
+                <br><br>
+                The frontend for the website was built with the Django
+                templating language to help save time during the hackathon.
+              </p>
+            </details>
+            <br>
+            <details>
+              <summary>
+                <strong>Humanager</strong> - A tool to help automate your love
+                and social life.
+              </summary>
+            </details>
+            <br>
+            <details>
+              <summary>
+                <strong>Blockchain Tool</strong> - A utility to help explore the
+                Bitcoin
+                blockchain.
+              </summary>
+            </details>
+
+          </div>
+        </div>
+
+        <div class="resume-container">
+          <h2 class="resume-header">
+            Work
+          </h2>
+          <div class="resume-details">
+            <details>
+              <summary>
+                <!-- <div class="work-card"> -->
+
+                <strong>Campbell River District and Chamber of
+                  Commerce</strong>
+                - A WordPress website for the CRDCC complete with payment
+                integration.
+
+
+                <!-- </div> -->
+              </summary>
+              <div class="divider"></div>
+              <img src="./img/chamber.png" alt="">
+              <p>
+                During my grade 12 year in highschool, I spent a lot of
+                time
+                working on the website for the Chamber of Commerce. It
+                was
+                my
+                first time working with a client and learned a lot!
+
+              </p>
+            </details>
+            <br>
+            <details>
+              <summary>
+                <!-- <div class="work-card"> -->
+                <strong>
+                  River City Future Technologies Ltd.
+                </strong>
+
+                - A Campbell River based company that specializes in blockchain
+                technology.
+                <!-- </div> -->
+              </summary>
+              <div class="divider"></div>
+              <img src="" alt="">
+            </details>
+          </div>
+        </div>
+
+
+      </section>
+
+    </div>
+  </div>
+
+
+  <script src="js/main.js"></script>
 
 </body>
 

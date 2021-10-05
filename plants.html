@@ -23,59 +23,63 @@
 
     <div class="container">
       <div class="sidebar fade animate">
-        <div id="menu" class="change" onclick="toggleNav()">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
 
-        <div class="socials">
-          <a href="https://www.twitter.com/" target="_blank">
-            <i class="fab fa-2x fa-twitter-square"></i>
-          </a>
-          <a href="https://www.twitter.com/" target="_blank">
-            <i class="fab fa-2x fa-linkedin"></i>
-          </a>
-
-          <a href="https://www.github.com/Toranian/" target="_blank">
-            <i class="fab fa-2x fa-github-square"></i>
-          </a>
-
-          <a href="https://www.facebook.com/universityofvictoria/">
-            <i class="fab fa-facebook-square fa-2x"></i>
-          </a>
-        </div>
+      <div id="menu" class="change" onclick="toggleNav()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
       </div>
 
-      <div class="navigation fade animate" id="navbar">
-        <div>
-          <div id="profile-img"></div>
 
-          <div>
-            <a href="./index.html" onclick="fadeOut(); toggleNav();">
-              <i class="fab fa-3x fa-chevron-right"></i>
-              <h1>Home</h1>
-            </a>
-            <a href="./plants.html" onclick="fadeOut(); toggleNav();">
+      <div class="socials">
+
+        <a href="https://www.twitter.com/" target="_blank">
+          <i class="fab fa-2x fa-twitter-square"></i>
+
+        </a>
+        <a href="https://www.twitter.com/" target="_blank">
+          <i class="fab fa-2x fa-linkedin"></i>
+        </a>
+
+        <a href="https://www.github.com/Toranian/" target="_blank">
+          <i class="fab fa-2x fa-github-square"></i>
+        </a>
+
+        <a href="https://www.facebook.com/universityofvictoria/">
+          <i class="fab fa-facebook-square fa-2x"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="navigation fade animate" id="navbar">
+
+      <div>
+        <div id="nav-img"></div>
+
+        <div>
+          <a href="./index.html" onclick="fadeOut(); toggleNav();">
+            <i class="fab fa-3x fa-chevron-right"></i>
+            <h1>Home</h1>
+          </a>
+          <a href="./hobbies.html" onclick="fadeOut(); toggleNav();">
+            <h1>Hobbies</h1>
+          </a>
+          <a href="./plants.html" onclick="fadeOut(); toggleNav();">
             <h1>Plants</h1>
           </a>
-            <a href="./hobbies.html" onclick="fadeOut(); toggleNav();">
-              <h1>Hobbies</h1>
-            </a>
-            <a href="./index.html" onclick="fadeOut(); toggleNav();">
-              <h1>Resume</h1>
-            </a>
+          <a href="./resume.html" onclick="fadeOut(); toggleNav();">
+            <h1>Resume</h1>
+          </a>
 
-            <h3
-              onclick="toggleBackground()"
-              id="bg-toggle"
-              style="cursor: pointer"
-            >
-              Disable Background
-            </h3>
-          </div>
+          <h3 onclick="toggleBackground()" id="bg-toggle"
+            style="cursor: pointer;">Disable Background</h3>
+
         </div>
+
       </div>
+    </div>
 
       <div class="content fade animate" id="content">
         <section id="resume" class="plant">

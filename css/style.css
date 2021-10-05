@@ -1,3 +1,4 @@
+/* Load the fonts */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Poppins:wght@300;400&family=Squada+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
@@ -35,7 +36,6 @@ html {
 .fade {
     opacity: 0.0;
     transform: translateY(50px);
-    rotate: (90deg);
     transition-duration: 0.5s;
 }
 
@@ -53,6 +53,7 @@ html {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    padding: 0 15px;
 }
 
 .navigation a {
@@ -71,17 +72,9 @@ html {
 
 .navigation a:hover h1 {
     color: black;
-    /* transform: scale(1.03); */
-    /* padding-left: 0.5vw; */
     transform: translateX(0.5vw);
     font-weight: bold;
 }
-
-/* @media screen and (max-width: 1000px) {
-    .navigation {
-        display: none;
-    }
-} */
 
 .container {
     display: flex;
@@ -114,7 +107,6 @@ h6 {
 }
 
 h2 {
-    /* font-size: 45px; */
     font-weight: bold;
 }
 
@@ -138,7 +130,6 @@ a {
     height: 1px;
     background-color: #ccc;
     margin: 10px 0px;
-
 }
 
 .scrollbar {
@@ -178,9 +169,6 @@ iframe {
 
 .socials a:hover {
     transform: translate(5px, -5px) scale(1.05);
-    /* box-shadow: 0px 4px 13 px 0px rgba(0, 0, 0, 0.411);
-    -webkit-box-shadow: 0px 4px 13px 0px rgba(7, 4, 4, 0.431);
-    -moz-box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.418); */
 }
 
 .socials:nth-child(2) {
@@ -219,18 +207,10 @@ iframe {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 16px;
-
-    /* min-width: 300px;
-    min-height: 300px; */
-    /* width: 100%;
-    height: auto; */
-
     min-height: 200px;
     min-width: 200px;
-
-    /* height: 15vw; */
-    /* padding: 15px; */
-    /* box-sizing: border-box; */
+    height: 200px;
+    width: 200px;
 }
 
 .content>* {
@@ -269,22 +249,16 @@ summary::marker {
     background: #555;
 }
 
-
-
 /* burger menu */
 #menu {
     right: 0;
     top: 0;
     height: 30px;
-    /* position: fixed; */
     padding: 10px;
     padding-top: 1vh;
-    /* padding-left: 15px; */
-    /* background-color: rgba(0, 0, 0, 0.5); */
     border-bottom-left-radius: 6px;
     cursor: pointer;
     z-index: 100;
-    /* visibility: hidden; */
 }
 
 .line1,
@@ -297,7 +271,6 @@ summary::marker {
     z-index: 2;
     transition: 0.4s;
 }
-
 
 /* Rotate first bar */
 .change .line1 {
@@ -318,19 +291,23 @@ summary::marker {
     padding-left: 5px;
 }
 
+.home-img {
+    background-image: url('../img/cropped_isaac.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    width: 300px;
+    height: 300px;
+}
+
 @media screen and (max-width: 1000px) {
-    /* #menu {
-        visibility: visible;
-    } */
 
     #navbar {
-        /* display: fixed; */
         z-index: 50;
         width: 100%;
         position: fixed;
         background-color: white;
-        /* backdrop-filter: blur(7px); */
-        /* color: white; */
     }
 
     #nav-img {
@@ -338,8 +315,19 @@ summary::marker {
     }
 
     #profile-img {
-        height: 300px;
+        height: 200px;
+        width: 200px;
 
+    }
+
+    .navigation {
+        overflow: scroll;
+        margin-bottom: 10vh;
+    }
+
+    .home-img {
+        width: 200px;
+        height: 200px;
     }
 
 }
@@ -357,7 +345,6 @@ summary::marker {
     color: rgb(26, 26, 26);
     transition-duration: 0.2s;
 }
-
 
 .fab:hover {
     color: rgb(0, 0, 0);
@@ -390,14 +377,12 @@ summary::marker {
     100% {
         transform: rotate(0deg);
     }
-
 }
 
 #landing {
     position: relative;
     padding-bottom: 10vh;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     padding-top: 10vh;
@@ -416,7 +401,6 @@ summary::marker {
 .landing-page p {
     line-height: 1.5em !important;
 }
-
 
 .buffer {
     height: 10vh;

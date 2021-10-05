@@ -3,7 +3,6 @@
     margin-bottom: 20vh;
 }
 
-
 .resume-details {
     display: flex;
     flex-direction: column;
@@ -26,10 +25,8 @@
 }
 
 #resume h2:hover {
-    /* border: 3px solid white; */
     background-color: black;
     color: white;
-    /* transform: scale(1.05) */
 }
 
 .resume-container {
@@ -73,7 +70,6 @@
     .hobby-img {
         width: 100% !important;
         height: auto !important;
-
     }
 }
 

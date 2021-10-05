@@ -72,7 +72,8 @@ html {
 .navigation a:hover h1 {
     color: black;
     /* transform: scale(1.03); */
-    padding-left: 0.5vw;
+    /* padding-left: 0.5vw; */
+    transform: translateX(0.5vw);
     font-weight: bold;
 }
 
@@ -211,27 +212,26 @@ iframe {
     cursor: pointer;
 }
 
-#profile-img {
+#profile-img,
+#nav-image {
     background-image: url('../img/cropped_isaac.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 16px;
 
-    min-width: 150px;
-    min-height: 150px;
+    /* min-width: 300px;
+    min-height: 300px; */
+    /* width: 100%;
+    height: auto; */
 
-    width: 15vw;
-    height: 15vw;
-    padding: 15px;
-    box-sizing: border-box;
+    min-height: 200px;
+    min-width: 200px;
+
+    /* height: 15vw; */
+    /* padding: 15px; */
+    /* box-sizing: border-box; */
 }
-
-/* @media screen and (max-width: 1000px) {
-    #profile-img {
-        display: none;
-    }
-} */
 
 .content>* {
     transition: cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
@@ -333,6 +333,15 @@ summary::marker {
         /* color: white; */
     }
 
+    #nav-img {
+        display: none;
+    }
+
+    #profile-img {
+        height: 300px;
+
+    }
+
 }
 
 .hide {
@@ -373,13 +382,15 @@ summary::marker {
     0% {
         transform: rotate(0deg);
     }
+
     50% {
         transform: rotate(15deg);
     }
+
     100% {
         transform: rotate(0deg);
     }
-    
+
 }
 
 #landing {
@@ -399,6 +410,7 @@ summary::marker {
 
 .bolded {
     font-weight: bold;
+    font-size: calc(20px + 0.5vw);
 }
 
 .landing-page p {
@@ -416,6 +428,7 @@ summary::marker {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .plant-container p {
 
     overflow-wrap: break-word;
@@ -427,4 +440,8 @@ summary::marker {
 
 .plant h2 {
     height: auto !important;
+}
+
+.title>* {
+    margin-bottom: 1vh;
 }

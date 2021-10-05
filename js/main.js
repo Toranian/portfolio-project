@@ -62,11 +62,11 @@ function toggleBackground() {
 	}
 
 }
-window.onresize = function () {
-	var background = document.querySelector("#navbar");
-	if (window.innerWidth <= 1000 || !background.classList.contains("hide")) {
-		toggleNav();
-		// background.classList.add("hide");
+// window.onresize = function () {
+// 	var background = document.querySelector("#navbar");
+// 	if (window.innerWidth <= 1000 || !background.classList.contains("hide")) {
+// 		toggleNav();
+// 		// background.classList.add("hide");
 
-	}
-}
+// 	}
+// }
